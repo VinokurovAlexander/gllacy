@@ -467,7 +467,7 @@ p.work-time {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     color: #fff;
 }
@@ -530,6 +530,7 @@ p.work-time {
 .ice-creams-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     padding: 0;
     margin: 0;
@@ -540,14 +541,12 @@ p.work-time {
 .ice-creams-item {
     box-sizing: border-box;
     width: 267px;
-    min-height: 405px;
+    min-height: 413px;
     position: relative;
 
-    padding-top: ;
-    padding-bottom: ;
+    padding-top: 6px;
+    padding-bottom: 20px;
 }
-
-
 
 .ice-creams-item h3 {
     font-size: 16px;
@@ -559,7 +558,7 @@ p.work-time {
 
 .ice-cream-pic {
     position: relative;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
 }
 
 .ice-creams-item::before {
@@ -584,7 +583,7 @@ p.work-time {
 
 .ice-cream-price {
     position: absolute;
-    top: 210px;
+    top: 215px;
 
     font-size: 45px;
     font-weight: 700;
@@ -599,9 +598,10 @@ p.work-time {
 
 .quick-view-link {
     display: none;
+    /* display: block; */
     box-sizing: border-box;
     width: 200px;
-    padding: 14px 14px;
+    padding: 12px 14px;
     margin: 0 auto;
 
     font-size: 18px;
@@ -609,6 +609,8 @@ p.work-time {
 }
 
 .ice-creams-item:hover {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.64);
+    border-radius: 10px;
     background-color: rgba(255,255,255, 0.2);
 }
 
@@ -617,19 +619,45 @@ p.work-time {
 }
 
 .ice-creams {
-    margin-bottom: 10px;
+
 }
 
 .advantages {
+    padding-top: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: -45px;
+
+
     background-image: url(../img/waffle.png);
+    background-color: #dbcfb5;
+    border-radius: 11px;
 }
 
-.advantage p {
-    margin: 0;
+.advantages p {
+    box-sizing: border-box;
+    width: 540px;
     padding: 0;
+    padding-top: 19px;
+    padding-left: 57px;
+    margin: 0;
+    margin-bottom: 5px;
 
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     color: #323232;
+}
+
+.advantages b {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.advantages .text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
