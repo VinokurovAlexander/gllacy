@@ -341,7 +341,7 @@ a {
     display: block;
 }
 
-.user-navigation a {
+.user-navigation .user-navigation-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,7 +376,7 @@ a {
     cursor: pointer;
 }
 
-.user-navigation a:not(.search-link) {
+.user-navigation .user-navigation-link:not(.search-link) {
     position: relative;
 
     padding-top: 7px;
@@ -395,7 +395,7 @@ a {
     color: #f8f7f4;
 }
 
-.user-navigation a:not(.search-link)::before {
+.user-navigation .user-navigation-link:not(.search-link)::before {
     content: "";
 
     position: absolute;
@@ -428,7 +428,7 @@ a {
     background-image: url("../img/cart-active.svg");
 }
 
-.user-navigation a:hover {
+.user-navigation .user-navigation-link:hover {
     background-color: #f8f7f4;
     color: #323232;
 }
@@ -928,6 +928,11 @@ p.work-time {
     justify-content: space-between;
 }
 
+.links-list-wrapper {
+    width: 560px;
+    padding: 30px 0;
+}
+
 .links-list {
     display: flex;
     flex-wrap: wrap;
@@ -935,15 +940,12 @@ p.work-time {
     width: 310px;
     box-sizing: border-box;
     margin: 0;
-    margin-left: 135px;
-    /* margin-right: 100px; */
+    margin-left: 140px;
+    margin-right: 90px;
 
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 50px;
 
     list-style: none;
-
 }
 
 .links-item:nth-child(even) {
@@ -965,13 +967,13 @@ p.work-time {
     width: 293px;
     box-sizing: border-box;
     padding-left: 102px;
-    padding-top: 22px;
-    padding-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 24px;
 }
 
 .logo-htmlacademy {
     width: 110px;
-    height: 40px;
+    height: 39px;
 }
 
 .copyright-text {
@@ -989,4 +991,81 @@ p.work-time {
 
 .htmlacademy-link {
     text-decoration: underline;
+}
+
+.modal-login {
+    display: none;
+    position: absolute;
+    top: 59px;
+    right: 488px;
+
+    box-sizing: border-box;
+    width: 277px;
+    padding: 20px 18px;
+
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.login-help-link {
+    font-size:13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #323232;
+
+    text-decoration: underline;
+}
+
+.modal-login input[type="mail"],
+.modal-login input[type="password"] {
+    box-sizing: border-box;
+    width: 239px;
+    padding: 10px 14px;
+
+    border: 1px solid #d3d3d2;
+    border-radius: 12px;
+
+    font: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999999;
+}
+
+.login-button {
+    padding: 12px 24px;
+
+    font-size: 18px;
+    line-height: 24px;
+
+    cursor: pointer;
+}
+
+.buttons-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login-help {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-mail,
+.user-password {
+    margin: 0;
+    padding: 0;
+}
+
+.user-mail {
+    margin-bottom: 20px;
+}
+
+.user-password {
+    margin-bottom: 15px;
+}
+
+.login-link:hover ~ .modal-login {
+    display: block;
 }
