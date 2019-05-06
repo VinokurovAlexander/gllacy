@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Сливочное мороженое</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    </body>
+        <div class="site-wrapper-catalog">
+            <div class="container">
+                <h1 class="visually-hidden"></h1>
+                <header class="main-header">
+                    <nav class="main-navigation">
+                        <a class="main-header-logo">
+                            <img src="img/logo-gllacy.svg" height="65px" width="155px" alt="Логотип Глейси">
+                        </a>
+                        <ul class="site-navigation">
+                            <li class="navigation-item"><a class ="catalog-link-current" href="catalog.html">Каталог</a>
+                                <ul class="sub-menu">
+                                    <li><span>Новинки</span></li>
+                                    <li><a href="creamy.html" class="sub-menu-link">Сливочное</a></li>
+                                    <li><a href="sherbets.html" class="sub-menu-link">Щербеты</a></li>
+                                    <li><a href="fruit_ice.html" class="sub-menu-link">Фруктовый лед</a></li>
+                                    <li><a href="melorin.html" class="sub-menu-link">Мелорин</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation-item"><a href="payment.html">Доставка и оплата</a></li>
+                            <li class="navigation-item"><a href="about.html">О Компании</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="user-navigation">
+                        <li class="user-navigation-item user-navigation-item-search">
+                            <a class="user-navigation-link search-link"><span class="visually-hidden">Поиск</span>
+                                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" heigth="16" viewBox="0 0 17 17" >
+                                    <path fill="#fff" d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5   S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2   S11,4.019,11,6.5S8.981,11,6.5,11z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <section class="modal-search">
+                                <input class="input-search"type="search" name="modal-search" value="" placeholder="Что ищем?">
+                            </section>
+                        </li>
+                        <li class="user-navigation-item user-navigation-item-login">
+                            <a class="user-navigation-link login-link" href="login.html">Вход</a>
+                            <section class="modal-login">
+                                <p class="user-mail">
+                                    <label class="visually-hidden" for="user-mail">Электронная почта</label>
+                                    <input type="mail" name="user-mail" value="" placeholder="Электронная почта">
+                                </p>
+                                <p class="user-password">
+                                    <label class="visually-hidden" for="user-password">Пароль</label>
+                                    <input type="password" name="user-password" value="" placeholder="Пароль">
+                                </p>
+                                <div class="buttons-links-wrapper">
+                                    <button class="button login-button" type="submit">Войти</button>
+                                    <div class="login-help">
+                                        <a class="login-help-link" href="#">Забыли пароль?</a>
+                                        <a class="login-help-link" href="#">Новая регистрация</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </li>
+                        <li class="user-navigation-item cart-link-with-items">
+                            <a class="user-navigation-link cart-link" href="cart.html">2 товара</a>
+                        </li>
+                    </ul>
+                    <div class="contacts">
+                        <p class="work-time">С 10 до 20, ежедневно</p>
+                        <p class="phone-number">8 812 450-25-25</p>
+                    </div>
+                </header>
+                <section class="filters">
+                    <fieldset class="sorting">
+                        <legend class="sorting-legend">Сортировка:</legend>
+                        <select class="sorting-select">
+                            <option value="">по популярности</option>
+                            <option value="">сначала недорогие</option>
+                            <option value="">сначала дорогие</option>
+                            <option value="">сначала дорогие</option>
+                            <option value="">по жирности</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="price-filter">
+                        <legend>Цена:</legend>
+                        <label class="min-price">
+                            <input type="text" name="min-price" value="100">
+                            руб.
+                        </label>
+                        <label class="max-price">
+                            -
+                            <input type="text" name="max-price" value="500">
+                            руб
+                        </label>
+                    </fieldset>
+                    <fieldset class="fatness-filter">
+                        <legend>Жирность:</legend>
+                        <label for="fat-0%">
+                            <input type="radio" name="fat-0%" value="">
+                            0%
+                        </label>
+                        <label for="fat-10%">
+                            <input type="radio" name="fat-10%" value="">
+                            до 10%
+                        </label>
+                        <label for="fat-less-30%">
+                            <input type="radio" name="fat-less-30%" value="">
+                            до 30%
+                        </label>
+                        <label for="fat-more-30%">
+                            <input type="radio" name="fat-more-30%" value="">
+                            выше 30%
+                        </label>
+                    </fieldset>
+                    <fieldset class="fillers">
+                        <legend>Наполнители:</legend>
+                        <label for="chocolate-filling">
+                            <input type="radio" name="chocolate-filling" value="">
+                            шоколадные
+                        </label>
+                        <label for="sugar-filling">
+                            <input type="radio" name="sugar-filling" value="">
+                            сахарные присыпки
+                        </label>
+                        <label for="fruits-filling">
+                            <input type="radio" name="fruits-filling" value="">
+                            фрукты
+                        </label>
+                        <label for="syrups-filling">
+                            <input type="radio" name="syrups-filling" value="">
+                            сиропы
+                        </label>
+                        <label for="jams-filling">
+                            <input type="radio" name="jams-filling" value="">
+                            джемы
+                        </label>
+                    </fieldset>
+                    <button type="submit">Применить</button>
+                </section>
+            </div>
+        </div>

@@ -1,31 +1,3 @@
-// ymaps.ready(function () {
-//      var myMap = new ymaps.Map('map', {
-//          center: [59.938779, 30.336639],
-//          zoom: 15
-// }, {
-//         searchControlProvider: 'yandex#search'
-//     });
-//
-// myPlacemark = new ymaps.Placemark([59.938854, 30.323223], {
-//             // hintContent: 'Собственный значок метки',
-//             // balloonContent: 'Это красивая метка'
-//         }, {
-//             // Опции.
-//             // Необходимо указать данный тип макета.
-//             iconLayout: 'default#image',
-//             // Своё изображение иконки метки.
-//             iconImageHref: 'img/icons/map-marker.png',
-//             // Размеры метки.
-//             iconImageSize: [80, 142],
-//             // Смещение левого верхнего угла иконки относительно
-//             // её "ножки" (точки привязки).
-//             iconImageOffset: [-5, -38]
-//
-//         });
-//         myMap.geoObjects
-//             .add(myPlacemark);
-//     });
-
 var createChipsLayout = function (calculateSize) {
 // Создадим макет метки.
     var Chips = ymaps.templateLayoutFactory.createClass(
@@ -86,5 +58,5 @@ ymaps.ready(function () {
             return 6 * zoom + 8;
         })
     }));
-    
+
 });
