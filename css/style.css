@@ -1406,3 +1406,59 @@ p.work-time {
 .fatness-filter {
     width: 415px;
 }
+
+.ice-creams-catalog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding-top: 35px;
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid #a9bbb1;
+}
+
+.paginator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    align-self: flex-end;
+
+    width: 190px;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+}
+
+.paginator a {
+    display: inline-block;
+
+    min-width: 26px;
+    height: 26px;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.paginator a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.paginator .page-list-link-current {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.prev-link-disabled {
+    opacity: 0.3;
+}
+
+.prev-link {
+    transform: rotate(180deg);
+}
