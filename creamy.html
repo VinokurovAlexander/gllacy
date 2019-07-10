@@ -107,48 +107,50 @@
                         <fieldset class="fatness-filter">
                             <legend>Жирность:</legend>
                             <ul class="fatness-filter-list">
-                                <li>
-                                    <input type="radio" name="fat-0%" id="fat-0%" value="">
+                                <li class="fatness-filter-item">
+                                    <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" id="fat-0%" value="0">
                                     <label for="fat-0%"> 0% </label>
                                 </li>
-                                <li>
-                                    <input type="radio" name="fat-10%" value="">
+                                <li class="fatness-filter-item">
+                                    <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" id="fat-10%" value="10">
                                     <label for="fat-10%">до 10%</label>
                                 </li>
-                                <li>
-                                    <input type="radio" name="fat-less-30%" value="">
+                                <li class="fatness-filter-item">
+                                    <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" id="fat-less-30%" value="-30">
                                     <label for="fat-less-30%">до 30%</label>
                                 </li>
-                                <li>
-                                    <input type="radio" name="fat-more-30%" value="">
+                                <li class="fatness-filter-item">
+                                    <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" id="fat-more-30%" value="30+">
                                     <label for="fat-more-30%">выше 30%</label>
                                 </li>
                             </ul>
                         </fieldset>
                         <fieldset class="fillers">
                             <legend>Наполнители:</legend>
-                            <label for="chocolate-filling">
-                                <input type="radio" name="chocolate-filling" value="">
-                                шоколадные
-                            </label>
-                            <label for="sugar-filling">
-                                <input type="radio" name="sugar-filling" value="">
-                                сахарные присыпки
-                            </label>
-                            <label for="fruits-filling">
-                                <input type="radio" name="fruits-filling" value="">
-                                фрукты
-                            </label>
-                            <label for="syrups-filling">
-                                <input type="radio" name="syrups-filling" value="">
-                                сиропы
-                            </label>
-                            <label for="jams-filling">
-                                <input type="radio" name="jams-filling" value="">
-                                джемы
-                            </label>
+                            <ul class="fillers-list">
+                                <li class="fillers-list-item">
+                                    <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" id="chocolate-filling" value="chocolate" checked>
+                                    <label for="chocolate-filling">шоколадные</label>
+                                </li>
+                                <li class="fillers-list-item">
+                                    <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" id="sugar-filling" value="sugar">
+                                    <label for="sugar-filling">сахарные присыпки</label>
+                                </li>
+                                <li class="fillers-list-item">
+                                    <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" id="fruits-filling" value="fruits">
+                                    <label for="fruits-filling">фрукты</label>
+                                </li>
+                                <li class="fillers-list-item">
+                                    <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" id="syrups-filling" value="syrups">
+                                    <label for="syrups-filling">сиропы</label>
+                                </li>
+                                <li class="fillers-list-item">
+                                    <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" id="jams-filling" value="jams">
+                                    <label for="jams-filling">джемы</label>
+                                </li>
+                            </ul>
                         </fieldset>
-                        <button type="submit">Применить</button>
+                        <button type="submit" class="filters-form-btn">Применить</button>
                     </form>
                 </section>
                 <section class="ice-creams-catalog">
