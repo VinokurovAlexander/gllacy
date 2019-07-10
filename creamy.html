@@ -71,71 +71,85 @@
                     </div>
                 </header>
                 <section class="filters">
-                    <fieldset class="sorting">
-                        <legend class="sorting-legend">Сортировка:</legend>
-                        <select class="sorting-select">
-                            <option value="">по популярности</option>
-                            <option value="">сначала недорогие</option>
-                            <option value="">сначала дорогие</option>
-                            <option value="">сначала дорогие</option>
-                            <option value="">по жирности</option>
-                        </select>
-                    </fieldset>
-                    <fieldset class="price-filter">
-                        <legend>Цена:</legend>
-                        <label class="min-price">
-                            <input type="text" name="min-price" value="100">
-                            руб.
-                        </label>
-                        <label class="max-price">
-                            -
-                            <input type="text" name="max-price" value="500">
-                            руб
-                        </label>
-                    </fieldset>
-                    <fieldset class="fatness-filter">
-                        <legend>Жирность:</legend>
-                        <label for="fat-0%">
-                            <input type="radio" name="fat-0%" value="">
-                            0%
-                        </label>
-                        <label for="fat-10%">
-                            <input type="radio" name="fat-10%" value="">
-                            до 10%
-                        </label>
-                        <label for="fat-less-30%">
-                            <input type="radio" name="fat-less-30%" value="">
-                            до 30%
-                        </label>
-                        <label for="fat-more-30%">
-                            <input type="radio" name="fat-more-30%" value="">
-                            выше 30%
-                        </label>
-                    </fieldset>
-                    <fieldset class="fillers">
-                        <legend>Наполнители:</legend>
-                        <label for="chocolate-filling">
-                            <input type="radio" name="chocolate-filling" value="">
-                            шоколадные
-                        </label>
-                        <label for="sugar-filling">
-                            <input type="radio" name="sugar-filling" value="">
-                            сахарные присыпки
-                        </label>
-                        <label for="fruits-filling">
-                            <input type="radio" name="fruits-filling" value="">
-                            фрукты
-                        </label>
-                        <label for="syrups-filling">
-                            <input type="radio" name="syrups-filling" value="">
-                            сиропы
-                        </label>
-                        <label for="jams-filling">
-                            <input type="radio" name="jams-filling" value="">
-                            джемы
-                        </label>
-                    </fieldset>
-                    <button type="submit">Применить</button>
+                    <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+                        <fieldset class="sorting">
+                            <legend class="sorting-legend">Сортировка:</legend>
+                            <select class="sorting-select">
+                                <option value="">по популярности</option>
+                                <option value="">сначала недорогие</option>
+                                <option value="">сначала дорогие</option>
+                                <option value="">сначала дорогие</option>
+                                <option value="">по жирности</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="price-filter">
+                            <legend class="price-filter-legend">
+                                Цена:
+                                <label class="min-price">
+                                    <input type="text" name="min-price" value="100">
+                                    руб.
+                                </label>
+                                <label class="max-price">
+                                    -
+                                    <input type="text" name="max-price" value="500">
+                                    руб
+                                </label>
+                            </legend>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                        </fieldset>
+                        <fieldset class="fatness-filter">
+                            <legend>Жирность:</legend>
+                            <ul class="fatness-filter-list">
+                                <li>
+                                    <input type="radio" name="fat-0%" id="fat-0%" value="">
+                                    <label for="fat-0%"> 0% </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fat-10%" value="">
+                                    <label for="fat-10%">до 10%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fat-less-30%" value="">
+                                    <label for="fat-less-30%">до 30%</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="fat-more-30%" value="">
+                                    <label for="fat-more-30%">выше 30%</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset class="fillers">
+                            <legend>Наполнители:</legend>
+                            <label for="chocolate-filling">
+                                <input type="radio" name="chocolate-filling" value="">
+                                шоколадные
+                            </label>
+                            <label for="sugar-filling">
+                                <input type="radio" name="sugar-filling" value="">
+                                сахарные присыпки
+                            </label>
+                            <label for="fruits-filling">
+                                <input type="radio" name="fruits-filling" value="">
+                                фрукты
+                            </label>
+                            <label for="syrups-filling">
+                                <input type="radio" name="syrups-filling" value="">
+                                сиропы
+                            </label>
+                            <label for="jams-filling">
+                                <input type="radio" name="jams-filling" value="">
+                                джемы
+                            </label>
+                        </fieldset>
+                        <button type="submit">Применить</button>
+                    </form>
                 </section>
                 <section class="ice-creams-catalog">
                     <ul class="ice-creams-list">

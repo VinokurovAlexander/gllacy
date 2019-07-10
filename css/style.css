@@ -1131,11 +1131,11 @@ p.work-time {
 }
 
 .modal-search {
-    display: none;
     position: absolute;
     top: 36px;
     right: 0px;
 
+    display: none;
     box-sizing: border-box;
     width: 340px;
     padding: 20px 15px;
@@ -1157,12 +1157,11 @@ p.work-time {
 }
 
 .modal-feedback {
-    display: none;
-
     position: fixed;
     top: 120px;
     left: 50%;
 
+    display: none;
     box-sizing: border-box;
     width: 477px;
     padding: 20px 24px 25px;
@@ -1321,7 +1320,7 @@ p.work-time {
     color: #323232;
 }
 
-.filters {
+.filters-form {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -1334,11 +1333,15 @@ p.work-time {
 }
 
 .filters legend {
+    margin: 0;
     margin-bottom: 7px;
+    margin-left: 15px;
+    padding: 0;
 }
 
 .filters fieldset {
     margin: 0;
+    margin-right: 16px;
     padding: 0;
 
     border: none;
@@ -1353,12 +1356,16 @@ p.work-time {
     position: relative;
 
     box-sizing: border-box;
+    width: 193px;
     padding: 9px 14px;
 
     background-color: rgba(255,255,255, 0.4);
     color: #ffffff;
     border-radius: 20px;
     border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1369,8 +1376,8 @@ p.work-time {
     content: "";
 
     position: absolute;
-    top: 39px;
-    right: 58px;
+    top: 40px;
+    right: 20px;
 
     border: 7px solid #fff;
     border-left-width: 4px;
@@ -1397,6 +1404,78 @@ p.work-time {
     box-sizing:border-box;
     width: 300px;
     padding: 6px 20px;
+}
+
+.range-filter {
+    width: 220px;
+}
+
+.range-controls {
+    position: relative;
+
+    height: 16px;
+    padding-top: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+
+    background-color: #abbcb2;
+
+    border-radius: 20px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: #d1dad3;
+}
+
+.range-controls .bar {
+    width: 60%;
+    height: 2px;
+    margin-left: 30px;
+
+    background: #f8f7f4;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+
+    width: 4px;
+    height: 4px;
+    padding: 0;
+
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 40px;
+}
+
+.range-controls .toggle-max {
+    left: 150px;
+}
+
+.price-filter-legend label {
+  display: inline-block;
+}
+
+.price-filter-legend input {
+    width: 30px;
+    padding: 2px;
+
+    border: none;
+    text-align: center;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
 }
 
 .price-filter {
@@ -1461,4 +1540,17 @@ p.work-time {
 
 .prev-link {
     transform: rotate(180deg);
+}
+
+.fatness-filter-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 7px 15px;
+
+    background-color: #abbcb2;
+    border-radius: 20px;
+    list-style: none;
 }
