@@ -369,15 +369,17 @@ input[type="radio"].visually-hidden {
 .user-navigation-item {
     position: relative;
 
-    margin-bottom: 7px;
+    padding-bottom: 7px;
     margin-right: 9px;
 }
 
-/* --------------------------------!!ПЕРЕДЕЛАТЬ!!-------------------------------- */
 .cart-link-with-items {
     margin-right: 0;
 }
-/* ---------------------------------------------------------------- */
+
+.cart-link-with-items:hover .cart-modal {
+    display: flex;;
+}
 
 .search-link {
     display: block;
@@ -635,6 +637,8 @@ p.work-time {
 }
 
 .ice-creams-item:hover {
+    z-index: 50;
+
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.64);
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.2);
@@ -1048,22 +1052,131 @@ p.work-time {
     text-decoration: underline;
 }
 
-.modal-login {
+.modal {
     position: absolute;
-    top: 35px;
-    right: 0px;
     z-index: 10;
 
     display: none;
     box-sizing: border-box;
-    width: 277px;
-    padding: 20px 18px;
 
     background-color: #f8f7f4;
     border-radius: 10px;
     box-shadow: 0 20px 40px -15px #000;
+}
 
+.cart-modal {
+    top: 36px;
+    left: -422px;
 
+    box-sizing: border-box;
+    width: 540px;
+    padding: 20px 15px;
+
+    flex-direction: column;
+
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.cart-modal .order-price,
+.cart-modal .order-button {
+    align-self: flex-end;
+}
+
+.cart-modal .order-price {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 14px;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.order-product-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 17px;
+}
+
+.order-product-wrapper:last-of-type {
+    margin-bottom: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccccc9;
+}
+
+.order-product-wrapper p {
+    margin: 0;
+    margin-left: 12px;
+    padding: 10px 2px;
+}
+
+.order-product-wrapper .ice-cream-order-price {
+    margin-left: 22px;
+}
+
+.order-product-wrapper .ice-cream-order-pic {
+    margin-left: 12px;
+}
+
+.order-product-wrapper .ice-cream-order-name {
+    width: 230px;
+}
+
+.order-product-wrapper .delete-product-btn {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-top: 9px;
+
+    font-size: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-wrapper {
+    position: relative;
+}
+
+.order-product-wrapper .delete-product-btn::after,
+.order-product-wrapper .delete-product-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+
+    width: 14px;
+    height: 1px;
+
+    background-color: #231f20;
+}
+
+.order-product-wrapper .delete-product-btn::after {
+    transform: rotate(45deg);
+}
+
+.order-product-wrapper .delete-product-btn::before {
+    transform: rotate(-45deg);
+}
+
+.cart-modal .order-button {
+    max-width: 170px;
+    padding: 10px 15px;
+
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.modal-login {
+    top: 35px;
+    right: 0px;
+
+    width: 277px;
+    padding: 20px 18px;
 }
 
 .login-help-link {
@@ -1131,19 +1244,13 @@ p.work-time {
 }
 
 .modal-search {
-    position: absolute;
     top: 36px;
     right: 0px;
-    z-index: 10;
 
-    display: none;
-    box-sizing: border-box;
     width: 340px;
     padding: 20px 15px;
 
-    background-color: #f8f7f4;
     border-radius: 6px;
-    box-shadow: 0 20px 40px -15px #000;
 }
 
 .modal-search .input-search {
@@ -1615,16 +1722,16 @@ p.work-time {
     width: 15px;
     height: 15px;
 
-    border: 2px solid #eef2f0;
+    border: 1.5px solid #eef2f0;
     border-radius: 2px;
 }
 
 .fillers-list-input:checked + label::before {
-    top: -2px;
+    top: -1.5px;
     left: -25px;
 
-    width: 22px;
-    height: 22px;
+    width: 21px;
+    height: 21px;
 
     background: center center no-repeat url("../img/icons/icon-checkbox-on-white.svg");
     background-size: contain;
@@ -1641,4 +1748,5 @@ p.work-time {
     background-color: #abbcb2;
     border: 2px solid #fcfcfc;
     border-radius: 50px;
+    cursor: pointer;
 }

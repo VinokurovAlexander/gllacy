@@ -12,7 +12,7 @@
                 <h1 class="visually-hidden"></h1>
                 <header class="main-header">
                     <nav class="main-navigation">
-                        <a class="main-header-logo">
+                        <a class="main-header-logo" href="index.html">
                             <img src="img/logo-gllacy.svg" height="65px" width="155px" alt="Логотип Глейси">
                         </a>
                         <ul class="site-navigation">
@@ -37,13 +37,15 @@
                                     </path>
                                 </svg>
                             </a>
-                            <section class="modal-search">
+                            <section class="modal modal-search">
+                                <h2 class="visually-hidden">Поиск</h2>
                                 <input class="input-search"type="search" name="modal-search" value="" placeholder="Что ищем?">
                             </section>
                         </li>
                         <li class="user-navigation-item user-navigation-item-login">
                             <a class="user-navigation-link login-link" href="login.html">Вход</a>
-                            <section class="modal-login">
+                            <section class="modal modal-login">
+                                <h2 class="visually-hidden">Окно авторизации</h2>
                                 <p class="user-mail">
                                     <label class="visually-hidden" for="user-mail">Электронная почта</label>
                                     <input type="mail" name="user-mail" value="" placeholder="Электронная почта">
@@ -63,6 +65,33 @@
                         </li>
                         <li class="user-navigation-item cart-link-with-items">
                             <a class="user-navigation-link cart-link" href="cart.html">2 товара</a>
+                            <section class="modal cart-modal">
+                                <h2 class="visually-hidden">Корзина с товарами</h2>
+                                <div class="order-product-wrapper">
+                                    <div class="btn-wrapper">
+                                        <button class="delete-product-btn" type="button">
+                                            Удалить товар
+                                        </button>
+                                    </div>
+                                    <img class="ice-cream-order-pic" src="img/ice-cream-orange.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                                    <p class="ice-cream-order-name">Пломбир с апельсиновым джемом</p>
+                                    <p class="ice-cream-order-amount">1,5 кг х <span>200 руб.</span></p>
+                                    <p class="ice-cream-order-price">300 руб.</p>
+                                </div>
+                                <div class="order-product-wrapper">
+                                    <div class="btn-wrapper">
+                                        <button class="delete-product-btn" type="button">
+                                            Удалить товар
+                                        </button>
+                                    </div>
+                                    <img class="ice-cream-order-pic" src="img/ice-cream-strawberry.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                    <p class="ice-cream-order-name">Клубничный пломбир с присыпкой из белого шоколада</p>
+                                    <p class="ice-cream-order-amount">1,5 кг х <span>300 руб.</span></p>
+                                    <p class="ice-cream-order-price">450 руб.</p>
+                                </div>
+                                <p class="order-price">Итого: 750 руб.</p>
+                                <a class="button order-button" href="#">Оформить заказ</a>
+                            </section>
                         </li>
                     </ul>
                     <div class="contacts">
