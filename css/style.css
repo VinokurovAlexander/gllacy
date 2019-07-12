@@ -954,8 +954,8 @@ p.work-time {
     box-sizing: border-box;
     width: 560px;
     padding: 30px 0;
-    padding-left: 125px;
-    padding-right: 135px;
+    padding-left: 130px;
+    padding-right: 120px;
 
 }
 
@@ -972,7 +972,7 @@ p.work-time {
 }
 
 .links-list-left {
-    margin-right: 25px;
+    margin-right: 30px;
 }
 
 
@@ -983,6 +983,18 @@ p.work-time {
     font-weight: 400;
     line-height: 18px;
     color: #ffffff;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.htmlacademy-link:hover,
+.htmlacademy-link:active {
+    color: #ffbc9e;
+}
+
+.footer-link:hover::after,
+ .footer-link:active::after{
+    background-color: rgba(255, 188, 158);
 }
 
 .footer-link::after {
