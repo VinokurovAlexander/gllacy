@@ -311,7 +311,6 @@ input[type="radio"].visually-hidden {
     border-radius: 0 0 5px 5px;
 }
 
-/* Полоска в менюшке */
 .sub-menu li:first-child::after {
     position: absolute;
     content: "";
@@ -324,15 +323,9 @@ input[type="radio"].visually-hidden {
     background-color: #d1d0ce;
 }
 
-
-
 .sub-menu li:hover:not(:first-child) {
     background-color: #fbded7;
 }
-
-/* .sub-menu li:last-child:hover {
-    border-radius: 0 0 10px 10px;
-} */
 
 .navigation-item:hover .sub-menu {
     display: block;
@@ -485,7 +478,6 @@ p.work-time {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
     margin-bottom: 35px;
 
     color: #fff;
@@ -497,13 +489,16 @@ p.work-time {
     padding: 0px 20px;
     padding-top: 16px;
     padding-bottom: 18px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
 
     border-radius: 13px;
+}
+
+.offer:nth-child(n+2) {
+    margin-top: 5px;
 }
 
 .offer .button {
@@ -523,6 +518,7 @@ p.work-time {
 .offer b {
     display: block;
     margin-bottom: 16px;
+    max-width: 520px;
 
     font-size: 35px;
     font-weight: 700;
@@ -1891,4 +1887,8 @@ p.work-time {
     right: 0px;
 
     color: #ffffff;
+}
+
+.slide-button {
+    max-width: 280px
 }
