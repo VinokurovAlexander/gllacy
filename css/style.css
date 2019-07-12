@@ -344,7 +344,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 
     box-sizing: border-box;
-    width: 269px;
+    width: 278px;
     padding: 0;
     margin: 0;
     margin: 0 -5px;
@@ -1443,6 +1443,7 @@ p.work-time {
 }
 
 .filters legend {
+    max-width: 220px;
     margin: 0;
     margin-bottom: 7px;
     margin-left: 15px;
@@ -1486,11 +1487,15 @@ p.work-time {
     appearance: none;
 }
 
-.sorting::after {
+.sorting-select-wrapper {
+    position: relative;
+}
+
+.sorting-select-wrapper::after {
     content: "";
 
     position: absolute;
-    top: 35px;
+    top: 14px;
     right: 16px;
 
     border: 10px solid #fff;
@@ -1501,17 +1506,13 @@ p.work-time {
     border-bottom-width: 0;
 }
 
-.sorting:hover .sorting-select{
+.sorting-select-wrapper:hover .sorting-select {
     color: #323232;
 }
 
-.sorting:hover::after {
+.sorting-select-wrapper:hover::after,
+.sorting-select:focus + .sorting-select-wrapper::after{
     border-top-color: #323232;
-}
-
-.sorting-select:focus {
-    background-color: #fff;
-    color: #323232;
 }
 
 .sorting-select option {
@@ -1667,7 +1668,6 @@ p.work-time {
     transform: rotate(180deg);
 }
 
-
 .fatness-filter-item {
     padding-left: 31px;
     margin-right: 18px;
@@ -1682,10 +1682,6 @@ p.work-time {
     margin-right: 0;
 }
 
-.fatness-filter-item:nth-child(4n) {
-    margin-right: 0;
-}
-
 .fatness-filter-item label,
 .fillers-list-item label  {
     position: relative;
@@ -1694,6 +1690,10 @@ p.work-time {
 
     cursor: pointer;
     user-select: none;
+}
+
+.fatness-filter-item label {
+    max-width: 140px;
 }
 
 .fatness-filter-input + label::before,
@@ -1852,6 +1852,7 @@ p.work-time {
 }
 
 .catalog-title {
+    max-width: 420px;
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
