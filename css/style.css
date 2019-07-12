@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
 .slider {
     position: relative;
 
-    padding-top: 273px;
+    padding-top: 295px;
     margin-bottom: 41px;
 
     text-align: center;
@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
 .slider-title {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
 
     font-size: 60px;
     font-weight: 700;
@@ -137,7 +137,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
     position: absolute;
-    bottom: 23px;
+    bottom: 21px;
     left: 0;
     z-index: 20;
 
@@ -497,7 +497,7 @@ p.work-time {
     border-radius: 13px;
 }
 
-.offer:nth-child(n+2) {
+.offer:nth-child(n+3) {
     margin-top: 5px;
 }
 
@@ -553,7 +553,6 @@ p.work-time {
 
     padding: 0;
     margin: 0;
-    margin-bottom: 50px;
 
     list-style: none;
 }
@@ -580,11 +579,6 @@ p.work-time {
     text-decoration: underline;
 }
 
-.ice-cream-pic {
-    position: relative;
-    margin-bottom: 8px;
-}
-
 .ice-creams-item-hit::before {
     content: "";
     display: block;
@@ -599,8 +593,10 @@ p.work-time {
 }
 
 .ice-cream-price {
-    position: absolute;
+    display: block;
     top: 215px;
+    margin-top: -63px;
+    margin-bottom: 21px;
 
     font-size: 45px;
     font-weight: 700;
@@ -639,7 +635,7 @@ p.work-time {
 }
 
 .ice-creams {
-
+    margin-bottom: 5px;
 }
 
 .advantages {
@@ -647,7 +643,7 @@ p.work-time {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 19px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 
     background-image: url(../img/waffle.png);
     background-color: #dbcfb5;
@@ -909,18 +905,21 @@ p.work-time {
 .social-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     box-sizing: border-box;
     width: 293px;
-    margin: 0 -8px;
+    margin: 0;
     padding: 0;
+    padding-top: 37px;
 
     list-style: none;
 }
 
 .social-item {
-    margin: 9px -8px 8px;
-    padding: 0 15px;
+    margin-right: 12px;
+}
+
+.social-item:nth-child(6n) {
+    margin-right: 0;
 }
 
 .social-icon {
@@ -951,26 +950,31 @@ p.work-time {
 }
 
 .links-list-wrapper {
+    display: flex;
+    box-sizing: border-box;
     width: 560px;
     padding: 30px 0;
+    padding-left: 125px;
+    padding-right: 135px;
+
 }
 
 .links-list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 310px;
+    max-width: 310px;
     margin: 0;
-    margin-left: 140px;
-    margin-right: 90px;
     padding: 0;
 
     list-style: none;
 }
 
-.links-item:nth-child(even) {
-    margin-left: 30px;
+.links-list-left {
+    margin-right: 25px;
 }
+
 
 .footer-link {
     position: relative;
