@@ -1650,7 +1650,8 @@ p.work-time {
 
 .fillers-list-item {
     position: relative;
-    padding-left: 35px;
+    display: flex;
+    align-items: center;
     margin-right: 18px;
 }
 
@@ -1731,10 +1732,18 @@ p.work-time {
     padding-top: 8px;
 }
 
+.fillers-list-radio {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
 
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+}
 
-.fillers-list-input:checked + .fillers-list-label::before,
-.fillers-list-input:checked + .fillers-list-label::after {
+.fillers-list-input:checked + .fillers-list-radio::before,
+.fillers-list-input:checked + .fillers-list-radio::after {
     content: "";
     position: absolute;
 
@@ -1743,7 +1752,7 @@ p.work-time {
     background-color: #e6ebe9;
 }
 
-.fillers-list-input:checked + .fillers-list-label::before {
+.fillers-list-input:checked + .fillers-list-radio::before {
     left: 5px;
     top: 5px;
 
@@ -1753,7 +1762,7 @@ p.work-time {
     transform: rotate(-45deg);
 }
 
-.fillers-list-input:checked + .fillers-list-label::after {
+.fillers-list-input:checked + .fillers-list-radio::after {
     left: 2px;
     top: 8px;
 
@@ -1762,7 +1771,7 @@ p.work-time {
     transform: rotate(45deg);
 }
 
-.fillers-list-input:checked:hover + .filler-checkbox::after,
+/* .fillers-list-input:checked:hover + .filler-checkbox::after,
 .fillers-list-input:checked:hover + .filler-checkbox::before {
     background-color: #ffffff;
 }
@@ -1770,7 +1779,7 @@ p.work-time {
 .fillers-list-input:checked:disabled + .filler-checkbox::after,
 .fillers-list-input:checked:disabled + .filler-checkbox::before {
     background-color: #b5c4bc;
-}
+} */
 
 .filters-form-btn {
     max-width: 145px;
