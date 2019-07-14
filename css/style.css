@@ -35,6 +35,7 @@ input[type="radio"].visually-hidden {
 
 .site-wrapper {
     min-width: 1200px;
+
     background-color: #849d8f;
     background-image: url("../img/slider-item1.png");
     background-repeat: no-repeat;
@@ -150,11 +151,10 @@ input[type="radio"].visually-hidden {
     height: 19px;
     margin-right: 8px;
 
-    vertical-align: top;
-
     border: 1px solid #fff;
     border-radius: 50%;
     cursor: pointer;
+    vertical-align: top;
 }
 
 .slide {
@@ -251,22 +251,20 @@ input[type="radio"].visually-hidden {
 }
 
 .sub-menu {
-    display: none;
     position: absolute;
     left: -20px;
     top: 32px;
+    z-index: 5;
 
+    display: none;
     width: 143px;
     margin: 0;
     padding: 0;
 
-    list-style: none;
-
     background-color: #f8f7f4;
     border-radius: 5px;
     box-shadow: 0 20px 65px -10px #000;
-
-    z-index: 5;
+    list-style: none;
 }
 
 .sub-menu-link {
@@ -396,17 +394,15 @@ input[type="radio"].visually-hidden {
     border-radius: 50px;
     background-color: rgba(255,255,255,0.2);
 
-    text-decoration: none;
-
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     color: #f8f7f4;
+    text-decoration: none;
 }
 
 .user-navigation .user-navigation-link:not(.search-link)::before {
     content: "";
-
     position: absolute;
     top: 6px;
     left: 17px;
@@ -540,7 +536,6 @@ p.work-time {
     margin-left: 5px;
     margin-bottom: 5px;
 
-
     font-size: 18px;
     line-height: 24px;
 }
@@ -550,7 +545,6 @@ p.work-time {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-
     padding: 0;
     margin: 0;
 
@@ -581,15 +575,14 @@ p.work-time {
 
 .ice-creams-item-hit::before {
     content: "";
-    display: block;
-
     position: absolute;
+    z-index: 5;
 
+    display: block;
     width: 61px;
     height: 61px;
 
     background-image: url("../img/hit.png");
-    z-index: 5;
 }
 
 .ice-cream-price {
@@ -611,7 +604,6 @@ p.work-time {
 
 .quick-view-link {
     display: none;
-    /* display: block; */
     box-sizing: border-box;
     width: 200px;
     padding: 12px 14px;
@@ -624,10 +616,11 @@ p.work-time {
 .ice-creams-item:hover {
     z-index: 50;
 
+    margin-bottom: -48px;
+
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.64);
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.2);
-    margin-bottom: -48px;
 }
 
 .ice-creams-item:hover .quick-view-link {
@@ -681,12 +674,11 @@ p.work-time {
 
 .advantages p::before {
     content: "";
-    display: block;
-
     position: absolute;
     left: 0;
     top: 5px;
 
+    display: block;
     width: 49px;
     height: 49px;
 }
@@ -797,7 +789,6 @@ p.work-time {
 .input-mailing-address {
     box-sizing: border-box;
     width: 368px;
-
     padding: 14px 14px;
 
     border-radius: 8px;
@@ -831,12 +822,11 @@ p.work-time {
     position: absolute;
     top: 61px;
     right: 27px;
+    z-index: 10;
 
     box-sizing: border-box;
     width: 302px;
     padding: 29px 25px;
-
-    z-index: 10;
 
     background-color: #fffefe;
     border-radius: 12px;
@@ -999,7 +989,6 @@ p.work-time {
 
 .footer-link::after {
     content: "";
-
     position: absolute;
     top: 15px;
     left: 0;
@@ -1016,7 +1005,6 @@ p.work-time {
 
 .suppliers-link::before {
     content: "";
-
     position: absolute;
     top: 3px;
     left: -23px;
@@ -1076,7 +1064,6 @@ p.work-time {
     box-sizing: border-box;
     width: 540px;
     padding: 20px 15px;
-
     flex-direction: column;
 
     font-size: 13px;
@@ -1189,7 +1176,6 @@ p.work-time {
     font-weight: 400;
     line-height: 24px;
     color: #323232;
-
     text-decoration: underline;
 }
 
@@ -1201,7 +1187,6 @@ p.work-time {
 
     border: 1px solid #d3d3d2;
     border-radius: 12px;
-
     font: inherit;
     font-size: 14px;
     font-weight: 400;
@@ -1271,6 +1256,7 @@ p.work-time {
     position: fixed;
     top: 120px;
     left: 50%;
+    z-index: 10;
 
     display: none;
     box-sizing: border-box;
@@ -1280,8 +1266,6 @@ p.work-time {
 
     background-color: #f8f7f4;
     border-radius: 8px;
-
-    z-index: 10;
 }
 
 .form-feedback {
@@ -1325,7 +1309,6 @@ p.work-time {
     box-sizing: border-box;
     width: 139px;
     padding: 13px 24px;
-
     align-self: flex-end;
 
     font-size: 18px;
@@ -1342,7 +1325,6 @@ p.work-time {
     padding: 0;
 
     font-size: 0;
-
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1351,7 +1333,6 @@ p.work-time {
 .close-button::after,
 .close-button::before {
     content: "";
-
     position: absolute;
     top: 8px;
     left: -3px;
@@ -1372,7 +1353,6 @@ p.work-time {
 
 .modal-show {
     display: block;
-
     animation: bounce 0.6s;
 }
 
@@ -1422,7 +1402,6 @@ p.work-time {
 
 .site-wrapper-catalog {
     min-width: 1200px;
-
     background-color: #9bafa4;
 }
 
@@ -1493,7 +1472,6 @@ p.work-time {
 
 .sorting-select-wrapper::after {
     content: "";
-
     position: absolute;
     top: 14px;
     right: 16px;
@@ -1535,13 +1513,11 @@ p.work-time {
     padding-right: 22px;
 
     background-color: #abbcb2;
-
     border-radius: 20px;
 }
 
 .range-controls .scale {
     height: 2px;
-
     background: #d1dad3;
 }
 
@@ -1557,7 +1533,6 @@ p.work-time {
     position: absolute;
     top: 7px;
     left: 0;
-
 
     width: 4px;
     height: 4px;
@@ -1590,12 +1565,12 @@ p.work-time {
     padding: 0;
 
     border: none;
-    text-align: center;
     background: transparent;
     color: #ffffff;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+    text-align: center;
 }
 
 .price-filter {
@@ -1637,7 +1612,6 @@ p.work-time {
 
 .paginator a {
     display: inline-block;
-
     min-width: 26px;
     height: 26px;
 
@@ -1669,24 +1643,60 @@ p.work-time {
 }
 
 .fatness-filter-item {
+    position: relative;
     padding-left: 31px;
-    margin-right: 18px;
+    margin-right: 19px;
 }
 
 .fillers-list-item {
+    position: relative;
     padding-left: 35px;
     margin-right: 18px;
 }
 
-.fillers-list-item:nth-child(5n) {
-    margin-right: 0;
+.fatness-filter-label::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+.fatness-filter-label:hover::after {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.fatness-filter-input:checked + .fatness-filter-label::after {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 0 0 3px #9bafa4;
+}
+
+.fatness-filter-input:checked + .fatness-filter-label:hover::after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.fatness-filter-input:disabled + .fatness-filter-label::after {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.fatness-filter-input:disabled:checked + .fatness-filter-label::after {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.fatness-filter-text {
+    padding-bottom: 25px;
 }
 
 .fatness-filter-item label,
 .fillers-list-item label  {
-    position: relative;
-
-    display: block;
+    display: inline-block;
+    padding-top: 1px;
 
     cursor: pointer;
     user-select: none;
@@ -1696,50 +1706,9 @@ p.work-time {
     max-width: 140px;
 }
 
-.fatness-filter-input + label::before,
-.fatness-filter-input:checked + label::after,
-.fillers-list-input + label::before,
-.fillers-list-input:checked + label::before {
-    content: "";
-    position: absolute;
-}
-
-.fatness-filter-input + label::before {
-    top: -2px;
-    left: -30px;
-
-    width: 15px;
-    height: 15px;
-
-    border: 3px solid rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-}
-
-.fatness-filter-input + label:hover::before {
-    border-color: rgba(255, 255, 255, 1);
-}
-
-.fatness-filter-input:checked + label::after {
-    top: 5px;
-    left: -23px;
-
-    width: 7px;
-    height: 7px;
-
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 50%;
-}
-
-.fatness-filter-input:checked + label:hover::after {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.fatness-filter-input:disabled + label::before {
-    border-color: rgba(255, 255, 255, 0.4);
-}
-
-.fatness-filter-input:checked:disabled + label::after {
-    background-color: rgba(255, 255, 255, 0.4);
+.fatness-filter-list {
+    width: 415px;
+    box-sizing: border-box;
 }
 
 .fatness-filter-list,
@@ -1755,10 +1724,6 @@ p.work-time {
     list-style: none;
 }
 
-..fatness-filter-list {
-    width: 415px;
-}
-
 
 .fillers-list {
     box-sizing: border-box;
@@ -1766,28 +1731,10 @@ p.work-time {
     padding-top: 8px;
 }
 
-.filler-checkbox {
-    position: absolute;
-    top: 0px;
-    left: -32px;
 
-    width: 16px;
-    height: 16px;
 
-    border: 2px solid rgba(255, 255, 255, 0.8);
-    border-radius: 2px;
-}
-
-.fillers-list-label:hover .filler-checkbox {
-    border-color: rgba(255, 255, 255, 1);
-}
-
-.fillers-list-input:disabled + .filler-checkbox {
-    border-color: #b5c4bc;
-}
-
-.fillers-list-input:checked + .filler-checkbox::before,
-.fillers-list-input:checked + .filler-checkbox::after {
+.fillers-list-input:checked + .fillers-list-label::before,
+.fillers-list-input:checked + .fillers-list-label::after {
     content: "";
     position: absolute;
 
@@ -1796,7 +1743,7 @@ p.work-time {
     background-color: #e6ebe9;
 }
 
-.fillers-list-input:checked + .filler-checkbox::before {
+.fillers-list-input:checked + .fillers-list-label::before {
     left: 5px;
     top: 5px;
 
@@ -1806,7 +1753,7 @@ p.work-time {
     transform: rotate(-45deg);
 }
 
-.fillers-list-input:checked + .filler-checkbox::after {
+.fillers-list-input:checked + .fillers-list-label::after {
     left: 2px;
     top: 8px;
 
@@ -1826,10 +1773,10 @@ p.work-time {
 }
 
 .filters-form-btn {
-    align-self: center;
     max-width: 145px;
     padding: 7px 27px;
     margin-top: 5px;
+    align-self: center;
 
     font: inherit;
     color: #ffffff;
@@ -1867,7 +1814,7 @@ p.work-time {
     flex-wrap: wrap;
     max-width: 267px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     padding: 0;
 
     list-style: none;
@@ -1908,4 +1855,8 @@ p.work-time {
 
 .slide-button {
     max-width: 280px
+}
+
+.last-item {
+    margin-right: 0;
 }
