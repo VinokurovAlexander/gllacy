@@ -69,9 +69,7 @@ input[type="radio"].visually-hidden {
 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 17px;
 }
 
 .main-header-logo {
@@ -342,10 +340,9 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 
     box-sizing: border-box;
-    width: 278px;
+    width: 267px;
     padding: 0;
     margin: 0;
-    margin: 0 -5px;
     padding-top: 23px;
 
     list-style: none;
@@ -353,9 +350,11 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-item {
     position: relative;
+    margin-right: 9px;
+    margin-bottom: 5px;
 
-    margin: 0 -5px 10px;
-    padding: 0 10px;
+    min-height: 40px;
+
 }
 
 .cart-link-with-items {
@@ -442,7 +441,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/cart-with-items.svg");
 }
 
-.contacts {
+/* .contacts {
     position: absolute;
     right: 0;
     bottom: -38px;
@@ -456,18 +455,38 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
     color: #fff;
 }
+*/
 
-p.work-time {
+.contacts {
     display: block;
-    margin-bottom: 5px;
+    width: 167px;
+    margin: 0;
+    margin-top: -6px;
+    margin-left: auto;
 
     font-size: 14px;
     line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
 }
 
-.phone-number {
+.contacts .work-time {
+    margin-left: 15px;
+}
+
+.contacts .telephone-link {
+    display: inline-block;
+    margin-top: 5px;
+
     font-size: 22px;
     line-height: 24px;
+    color: #fff;
+}
+
+.contacts .telephone-link:hover,
+.contacts .telephone-link:active {
+    color: #ffbc9e;
 }
 
 .offer-wrapper {
@@ -813,7 +832,7 @@ p.work-time {
 #map {
     position: relative;
 
-    width: 1200px;
+    width: 100%;
     height: 430px;
     margin: 0 auto;
 }
@@ -1164,8 +1183,8 @@ p.work-time {
 }
 
 .modal-login {
-    top: 35px;
-    right: 0px;
+    bottom: -210px;
+    right: 0;
 
     width: 277px;
     padding: 20px 18px;
@@ -1651,8 +1670,8 @@ p.work-time {
 .fillers-list-item {
     position: relative;
     display: flex;
-    align-items: center;
-    margin-right: 18px;
+    margin-right: 21px;
+    padding-left: 32px;
 }
 
 .fatness-filter-label::after {
@@ -1710,15 +1729,14 @@ p.work-time {
 .fatness-filter-list {
     width: 415px;
     box-sizing: border-box;
+    padding: 9px 12px;
 }
 
 .fatness-filter-list,
 .fillers-list {
     display: flex;
     flex-wrap: wrap;
-
     margin: 0;
-    padding: 9px 12px;
 
     background-color: #abbcb2;
     border-radius: 20px;
@@ -1729,14 +1747,18 @@ p.work-time {
 .fillers-list {
     box-sizing: border-box;
     width: 700px;
-    padding-top: 8px;
+    padding: 0px 15px;
+    padding-top: 7px;
+    padding-bottom: 11px;
 }
 
 .fillers-list-radio {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    left: 0;
+
     width: 15px;
     height: 15px;
+    margin-right: 10px;
 
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 2px;
@@ -1823,7 +1845,8 @@ p.work-time {
     flex-wrap: wrap;
     max-width: 267px;
     margin: 0;
-    margin-bottom: 4px;
+    margin-top: -21px;
+    margin-bottom: 3px;
     padding: 0;
 
     list-style: none;
@@ -1869,3 +1892,8 @@ p.work-time {
 .last-item {
     margin-right: 0;
 }
+
+
+/* .modal-login {
+    display: block;
+} */

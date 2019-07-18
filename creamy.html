@@ -38,7 +38,7 @@
                             </a>
                             <section class="modal modal-search">
                                 <h2 class="visually-hidden">Поиск</h2>
-                                <input class="input-search"type="search" name="modal-search" value="" placeholder="Что ищем?">
+                                <input class="input-search" type="search" name="modal-search" value="" placeholder="Что ищем?">
                             </section>
                         </li>
                         <li class="user-navigation-item user-navigation-item-login">
@@ -93,10 +93,10 @@
                             </section>
                         </li>
                     </ul>
-                    <div class="contacts">
-                        <p class="work-time">С 10 до 20, ежедневно</p>
-                        <p class="phone-number">8 812 450-25-25</p>
-                    </div>
+                    <p class="contacts">
+                        <span class="work-time">С 10 до 20, ежедневно</span>
+                        <a class="telephone-link" href="8 812 450-25-25">8 812 450-25-25</a>
+                    </p>
                 </header>
                 <main>
                     <ul class="breadcrumbs">
@@ -180,10 +180,11 @@
                                         </label>
                                     </li>
                                     <li class="fillers-list-item">
-                                        <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="fruits">
-                                        <span class="fillers-list-radio"></span>
-                                        <label class="fillers-list-label">фрукты</label>
-
+                                        <label class="fillers-list-label" for="fruits">
+                                            <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="fruits" id="fruits">
+                                            <span class="fillers-list-radio"></span>
+                                            фрукты
+                                        </label>
                                     </li>
                                     <li class="fillers-list-item">
                                         <label class="fillers-list-label">
