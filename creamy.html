@@ -156,7 +156,7 @@
                                         <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" value="до 30%" id="до 30%">
                                         <label class="fatness-filter-label" for="до 30%">до 30%</label>
                                     </li>
-                                    <li class="fatness-filter-item last-item">
+                                    <li class="fatness-filter-item fatness-filter-item-last">
                                         <input class="visually-hidden fatness-filter-input" type="radio" name="fatness-group" value="выше 30%" id="выше 30%">
                                         <label class="fatness-filter-label" for="выше 30%">выше 30%</label>
                                     </li>
@@ -167,7 +167,7 @@
                                 <ul class="fillers-list">
                                     <li class="fillers-list-item">
                                         <label class="fillers-list-label">
-                                            <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="chocolate">
+                                            <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="chocolate" checked>
                                             <span class="fillers-list-radio"></span>
                                             шоколадные
                                         </label>
@@ -180,8 +180,8 @@
                                         </label>
                                     </li>
                                     <li class="fillers-list-item">
-                                        <label class="fillers-list-label" for="fruits">
-                                            <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="fruits" id="fruits">
+                                        <label class="fillers-list-label">
+                                            <input  class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="fruits">
                                             <span class="fillers-list-radio"></span>
                                             фрукты
                                         </label>
@@ -193,7 +193,7 @@
                                             сиропы
                                         </label>
                                     </li>
-                                    <li class="fillers-list-item last-item">
+                                    <li class="fillers-list-item fillers-list-item-last">
                                         <label class="fillers-list-label">
                                             <input class="visually-hidden fillers-list-input" type="radio" name="fillers-group" value="jams">
                                             <span class="fillers-list-radio"></span>
@@ -206,77 +206,100 @@
                         </form>
                     </section>
                     <section class="ice-creams-catalog">
-                        <ul class="ice-creams-list">
+                        <ul class="ice-creams-list ice-creams-list-catalog">
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-orange.png" alt="Мороженое Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267">
                                 <span class="ice-cream-price">310&#8381;</span>
-                                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-orange.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-coffee.png" alt="Мороженое сливочно-кофейное с кусочками шоколада" height="267" width="267">
                                 <span class="ice-cream-price">380&#8381;</span>
-                                <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-coffee.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-strawberry.png" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267">
                                 <span class="ice-cream-price">355&#8381;</span>
-                                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-strawberry.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-creme-brulee.png" alt="Мороженое крем-брюле с карамельной подливкой" height="267" width="267">
                                 <span class="ice-cream-price">415&#8381;</span>
-                                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-creme-brulee.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-cowberry.png" alt="Мороженое cливочное с брусничным джемом" height="267" width="267">
                                 <span class="ice-cream-price">325&#8381;</span>
-                                <h3>Сливочное с брусничным джемом</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное с брусничным джемом</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-cowberry.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-blueberry.png" alt="Мороженое сливочно-черничное с цельными ягодами черники" height="267" width="267">
                                 <span class="ice-cream-price">410&#8381;</span>
-                                <h3>Сливочно-черничное с цельными ягодами черники</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочно-черничное с цельными ягодами черники</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-blueberry.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-lemon.png" alt="Мороженое cливочно-лимонное с карамельной присыпкой" height="267" width="267">
                                 <span class="ice-cream-price">375&#8381;</span>
-                                <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-lemon.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-chocolate-chip.png" alt="Мороженое cливочное с шоколадной стружкой" height="267" width="267">
                                 <span class="ice-cream-price">320&#8381;</span>
-                                <h3>Сливочное с шоколадной стружкой</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное с шоколадной стружкой</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-chocolate-chip.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-vanil.png" alt="Мороженое cливочно-ванильное с кусочками шоколада" height="267" width="267">
                                 <span class="ice-cream-price">440&#8381;</span>
-                                <h3>Сливочно-ванильное с кусочками шоколада</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочно-ванильное с кусочками шоколада</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-vanil.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-mentol.png" alt="Мороженое cливочноe с ментоловым сиропом" height="267" width="267">
                                 <span class="ice-cream-price">435&#8381;</span>
-                                <h3>Сливочноe с ментоловым сиропом</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочноe с ментоловым сиропом</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-mentol.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-chocolate.png" alt="Мороженое cливочное с кусочками черного шоколада" height="267" width="267">
                                 <span class="ice-cream-price">355&#8381;</span>
-                                <h3>Сливочное с кусочками черного шоколада</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное с кусочками черного шоколада</h3>
+                                </a>
                                 <a class="button quick-view-link" href="ice-cream-chocolate.html">Быстрый просмотр</a>
                             </li>
                             <li class="ice-creams-item">
                                 <img  class="ice-cream-pic" src="img/ice-cream-mint.png" alt="Мороженое cливочное с мятным сиропом" height="267" width="267">
                                 <span class="ice-cream-price">420&#8381;</span>
-                                <h3>Сливочное с мятным сиропом</h3>
+                                <a class="ice-creams-list-link" href="#">
+                                    <h3>Сливочное с мятным сиропом</h3>
                                 <a class="button quick-view-link" href="ice-cream-mint.html">Быстрый просмотр</a>
                             </li>
                         </ul>
