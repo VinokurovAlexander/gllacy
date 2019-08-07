@@ -1,9 +1,9 @@
 var popup_open_but = document.querySelector(".button-feedback");
 var popup = document.querySelector(".modal-feedback");
 var popup_close_but = popup.querySelector(".close-button");
-var popup_username_input = popup.querySelector("[name=input-user-name]");
-var popup_email_input = popup.querySelector("[name=input-email]");
-var popup_feedback_text = popup.querySelector("[name=feedback-text]");
+var popup_username_input = popup.querySelector("[name='input-user-name']");
+var popup_email_input = popup.querySelector("[name='input-email']");
+var popup_feedback_text = popup.querySelector("[name='feedback-text']");
 var form = popup.querySelector(".form-feedback");
 
 var isStorageSupport = true;
