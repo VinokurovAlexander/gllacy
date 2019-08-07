@@ -34,13 +34,13 @@ popup_close_but.addEventListener("click", function(evt) {
 
 form.addEventListener("submit", function(evt) {
     if (!popup_username_input.value || !popup_email_input.value || !popup_feedback_text.value) {
-    evt.preventDefault();
-    popup.classList.remove("modal-error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
     } else {
     if (isStorageSupport) {
-    local.Storage.setItem("user_email",popup_email_input.value);
+    localStorage.setItem("user_email",popup_email_input.value);
         }
     }
 });
