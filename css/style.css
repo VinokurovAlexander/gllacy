@@ -611,7 +611,7 @@ input[type="radio"].visually-hidden {
 }
 
 .ice-creams-list-catalog {
-    margin-bottom: 47px;
+    margin-bottom: 48px;
 }
 
 .ice-creams-item {
@@ -620,7 +620,7 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
     width: 293px;
     padding-top: 5px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
 }
 
 .ice-creams-item:nth-child(4n-3) {
@@ -705,7 +705,7 @@ input[type="radio"].visually-hidden {
 }
 
 .ice-creams {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .ice-cream-pic {
@@ -719,7 +719,7 @@ input[type="radio"].visually-hidden {
     padding-top: 27px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 21px;
     margin-bottom: 40px;
 
     background-image: url(../img/waffle.png);
@@ -752,7 +752,7 @@ input[type="radio"].visually-hidden {
     padding-top: 19px;
     padding-left: 57px;
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     font-size: 16px;
     font-weight: 400;
@@ -1679,7 +1679,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
 
     padding-top: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 29px;
 
     border-bottom: 1px solid #a9bbb1;
 }
@@ -1689,7 +1689,6 @@ input[type="radio"].visually-hidden {
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-self: flex-end;
 
     width: 205px;
@@ -1698,6 +1697,18 @@ input[type="radio"].visually-hidden {
     padding: 0;
 
     list-style: none;
+}
+
+.paginator-item {
+  margin-right: 3px;
+}
+
+.paginator-item:nth-child(7n) {
+  margin-right: 0;
+}
+
+.paginator-item:nth-child(6n) {
+  margin-right: 7px;
 }
 
 .paginator a {
@@ -1722,6 +1733,14 @@ input[type="radio"].visually-hidden {
 .paginator a:active {
     background-color: #ffffff;
     color: #000000;
+}
+
+.paginator-item-arrow {
+  width: 15px;
+}
+
+.paginator-item-arrow:first-child {
+  margin-right: 14px;
 }
 
 .prev-link-disabled {
