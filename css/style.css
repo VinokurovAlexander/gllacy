@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
 .slider-title {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
     font-size: 60px;
     font-weight: 700;
@@ -557,10 +557,6 @@ input[type="radio"].visually-hidden {
     border-radius: 13px;
 }
 
-.offer:nth-child(n+3) {
-    margin-top: 5px;
-}
-
 .offer .button {
     align-self: flex-end;
 }
@@ -651,6 +647,7 @@ input[type="radio"].visually-hidden {
 .ice-creams-item-hit::before {
     content: "";
     position: absolute;
+    left: 13px;
     z-index: 5;
 
     display: block;
@@ -662,7 +659,7 @@ input[type="radio"].visually-hidden {
 
 .ice-cream-price {
     display: block;
-    margin-top: -56px;
+    margin-top: -57px;
     margin-bottom: 21px;
     padding-left: 10px;
 
@@ -708,7 +705,7 @@ input[type="radio"].visually-hidden {
 }
 
 .ice-creams {
-    margin-bottom: 7px;
+    margin-bottom: 3px;
 }
 
 .ice-cream-pic {
@@ -722,8 +719,8 @@ input[type="radio"].visually-hidden {
     padding-top: 27px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 16px;
-    margin-bottom: 41px;
+    padding-bottom: 18px;
+    margin-bottom: 40px;
 
     background-image: url(../img/waffle.png);
     background-color: #dbcfb5;
@@ -870,7 +867,7 @@ input[type="radio"].visually-hidden {
 .mailing-button {
     box-sizing: border-box;
     width: 130px;
-    padding: 12px 16px;
+    padding: 11px 16px;
 
     font-size: 18px;
     font-weight: 700;
@@ -880,8 +877,11 @@ input[type="radio"].visually-hidden {
 .input-mailing-address {
     box-sizing: border-box;
     width: 368px;
-    padding: 14px 14px;
+    padding: 9px 14px;
 
+
+    font-size: 14px;
+    line-height: 24px;
     border-radius: 8px;
     border: 1px solid #dbdfdb;
 }
@@ -912,12 +912,12 @@ input[type="radio"].visually-hidden {
 .map-contacts {
     position: absolute;
     top: 14%;
-    right: 20%;
+    right: 10%;
     z-index: 10;
 
     box-sizing: border-box;
     width: 302px;
-    padding: 29px 25px;
+    padding: 30px 25px;
 
     background-color: #fffefe;
     border-radius: 12px;
@@ -946,15 +946,19 @@ input[type="radio"].visually-hidden {
 
 .map-contacts .telephone-contacts {
     width: 175px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .telephone-contacts .telephone-title {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.telephone-contacts .telephone-number {
+  margin-bottom: 1px;
 }
 
 .telephone-link {
@@ -1345,9 +1349,9 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback {
     position: fixed;
-    top: 15%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, -50%);
     z-index: 10;
 
     display: none;
@@ -1449,26 +1453,18 @@ input[type="radio"].visually-hidden {
 
 @keyframes bounce {
     0% {
-    transform: translate(-50%,-2000px);
-  }
-
-  70% {
-    transform: translate(-50%,30px);
-  }
-
-  90% {
-    transform: translate(-50%,-10px);
+    transform: translate(-50%,-2000%);
   }
 
   100% {
-    transform: translate(-50%,0);
+    transform: translate(-50%,-50%);
   }
 }
 
 @keyframes shake {
     0%,
   100% {
-    transform: translate(-50%,-15%);
+    transform: translate(-50%,-50%);
   }
 
   10%,
@@ -1476,14 +1472,14 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translate(-52%,-15%);
+    transform: translate(-52%,-50%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translate(-48%,-15%);
+    transform: translate(-48%,-50%);
   }
 }
 
