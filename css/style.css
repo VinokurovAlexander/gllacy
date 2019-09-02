@@ -1767,6 +1767,10 @@ input[type="radio"].visually-hidden {
     appearance: none;
 }
 
+.sorting-select::-ms-expand {
+  display: none;
+}
+
 .sorting-select-wrapper {
     position: relative;
 }
