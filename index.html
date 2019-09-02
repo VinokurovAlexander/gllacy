@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Главная</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -105,20 +105,22 @@
           </li>
         </ul>
       </section>
-      <section class="offer-wrapper">
+      <section class="offer-main">
         <h2 class="visually-hidden">Блок с рекламными предложениями</h2>
-        <section class="offer raspberry">
-          <h3 class="visually-hidden">Подарок к заказу</h3>
-            <b>Малинка даром!</b>
-            <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button" href="fruit-icecream.html">Хочу варенье!</a>
-        </section>
-        <section class="offer chocolate">
-          <h3 class="visually-hidden">Подарок к заказу</h3>
-            <b>Шоколадки даром!</b>
-            <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="button" href="sundae.html">Хочу шоколадки!</a>
-        </section>
+        <div class="offer-wrapper">
+          <section class="offer raspberry">
+            <h3 class="visually-hidden">Подарок к заказу</h3>
+              <b>Малинка даром!</b>
+              <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <a class="button" href="fruit-icecream.html">Хочу варенье!</a>
+          </section>
+          <section class="offer chocolate">
+            <h3 class="visually-hidden">Подарок к заказу</h3>
+              <b>Шоколадки даром!</b>
+              <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+              <a class="button" href="sundae.html">Хочу шоколадки!</a>
+          </section>
+        </div>
       </section>
       <section class="ice-creams">
         <h2 class="visually-hidden">Список мороженого</h2>
@@ -175,29 +177,30 @@
           </li>
         </ul>
       </section>
-      <section class="news-mailing-wrapper">
+      <section class="news-mailing">
         <h2 class="visually-hidden">Блок с новостями и подпиской на рассылку</h2>
-        <article class="news">
-          <h3>Новое в нашем блоге</h3>
-          <a href="news.html" class="news-link">10 способов сервировки фруктовых щербетов к столу
-          </a>
-        </article>
-        <section class="mailing">
-          <h3 class="visually-hidden">Наша рассылка</h3>
-          <div class="content-wrapper">
-            <p>
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды Честно =)
-            </p>
-            <div class="mail-button-wrapper">
-              <input type="email" name="Электронная почта" value="" placeholder="Электронная почта" class="input-mailing-address">
-              <button type="submit" name="mailing-button" class="button mailing-button">
-                Отправить
-              </button>
+        <div class="news-mailing-wrapper">
+          <article class="news">
+            <h3>Новое в нашем блоге</h3>
+            <a href="news.html" class="news-link">10 способов сервировки фруктовых щербетов к столу
+            </a>
+          </article>
+          <section class="mailing">
+            <h3 class="visually-hidden">Наша рассылка</h3>
+            <div class="content-wrapper">
+              <p>
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды Честно =)
+              </p>
+              <div class="mail-button-wrapper">
+                <input type="email" name="Электронная почта" value="" placeholder="Электронная почта" class="input-mailing-address">
+                <button type="submit" name="mailing-button" class="button mailing-button">
+                  Отправить
+                </button>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </section>
-    </div>
     <div id="map">
       <div class="map-contacts">
         <p class="address-title">Адрес главного офиса и офлайн-магазина:</p>
