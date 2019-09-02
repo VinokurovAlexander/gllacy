@@ -136,6 +136,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
+
   padding: 10px 40px;
 
   font-size: 32px;
@@ -183,6 +184,7 @@ input[type="radio"].visually-hidden {
 
 .slider-controls label {
   display: inline-block;
+
   width: 19px;
   height: 19px;
   margin-right: 8px;
@@ -252,8 +254,9 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.navigation-item>a {
+.navigation-item > a {
   display: inline-block;
+
   padding-top: 8px;
 
   color: #fff;
@@ -261,6 +264,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  vertical-align: middle;
 }
 
 .navigation-item {
@@ -529,6 +533,7 @@ input[type="radio"].visually-hidden {
   font-size: 22px;
   line-height: 24px;
   color: #fff;
+  vertical-align: middle;
 }
 
 .contacts .telephone-link:hover,
@@ -567,8 +572,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px 20px;
-  padding-top: 16px;
-  padding-bottom: 18px;
+  padding-top: 14px;
+  padding-bottom: 22px;
 
   border-radius: 13px;
 }
@@ -611,7 +616,7 @@ input[type="radio"].visually-hidden {
 
 .offer a {
   max-width: 170px;
-  padding: 11px 22px;
+  padding: 10px 22px;
   margin-left: 5px;
   margin-bottom: 5px;
 
@@ -646,7 +651,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 293px;
   padding-top: 5px;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
 }
 
 .ice-creams-item:nth-child(4n-3) {
@@ -660,7 +665,7 @@ input[type="radio"].visually-hidden {
 .ice-creams-item h3 {
   margin: 0;
   margin-bottom: 15px;
-  padding: 0 18px;
+  padding: 0 19px;
 
   font-size: 16px;
   font-weight: 500;
@@ -687,7 +692,7 @@ input[type="radio"].visually-hidden {
 .ice-cream-price {
   display: block;
 
-  margin-top: -57px;
+  margin-top: -60px;
   margin-bottom: 21px;
   padding-left: 10px;
 
@@ -704,7 +709,7 @@ input[type="radio"].visually-hidden {
 
 .ice-cream-price i {
   font-style: normal;
-  margin-left: 4px;
+  margin-left: 9px;
 }
 
 .quick-view-link {
@@ -846,7 +851,7 @@ input[type="radio"].visually-hidden {
 
 .news {
   min-height: 220px;
-  padding: 25px 20px;
+  padding: 22px 20px;
 
   background-color: #eff2f0;
   background-image: url(../img/background-news.png);
@@ -903,7 +908,7 @@ input[type="radio"].visually-hidden {
 
 .content-wrapper p {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 
   font-size: 16px;
   font-weight: 400;
@@ -916,10 +921,16 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 130px;
   padding: 11px 16px;
+  margin-bottom: 5px;
+  margin-right: 10px;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.mailing-button:first-of-type {
+  margin-right: 0;
 }
 
 .input-mailing-address {
@@ -927,6 +938,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 368px;
   padding: 9px 14px;
+  margin-bottom: 5px;
+  margin-right: 12px;
 
   font-size: 14px;
   line-height: 24px;
@@ -943,15 +956,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.mail-button-wrapper button:first-of-type {
-  margin-left: 12px;
-}
-
-.mail-button-wrapper *:not(:first-of-type) {
-  margin-top: 5px;
-  margin-right: 5px;
 }
 
 .map {
@@ -1851,6 +1855,7 @@ input[type="radio"].visually-hidden {
 
 .price-filter-legend label {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .price-filter-legend input {
@@ -1890,7 +1895,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  padding-top: 18px;
+  padding-top: 17px;
   padding-bottom: 29px;
 
   border-bottom: 1px solid #a9bbb1;
@@ -1928,6 +1933,7 @@ input[type="radio"].visually-hidden {
 
 .paginator a {
   display: inline-block;
+
   min-width: 26px;
   height: 26px;
 
@@ -1998,6 +2004,7 @@ input[type="radio"].visually-hidden {
   height: 15px;
   border: 3px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
+  vertical-align: middle;
 }
 
 .fatness-filter-label:hover::after {
@@ -2037,6 +2044,7 @@ input[type="radio"].visually-hidden {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  vertical-align: middle;
 }
 
 .fatness-filter-item label {
@@ -2218,11 +2226,11 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs .separator::after {
-  content: "&raquo;";
+  content: "\BB";
   position: absolute;
   top: 0;
   right: 0px;
-  
+
   color: #ffffff;
 }
 
