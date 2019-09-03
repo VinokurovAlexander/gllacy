@@ -1981,6 +1981,10 @@ input[type="radio"].visually-hidden {
   margin-right: 19px;
 }
 
+.fatness-filter-item:nth-child(n+5) {
+  margin-top: 10px;
+}
+
 .fillers-list-item {
   position: relative;
 
@@ -1990,6 +1994,10 @@ input[type="radio"].visually-hidden {
 
   margin-right: 21px;
   padding-left: 32px;
+}
+
+.fillers-list-item:nth-child(n+6) {
+  margin-top: 10px;
 }
 
 .fatness-filter-label::after {
