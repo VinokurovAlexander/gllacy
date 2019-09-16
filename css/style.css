@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: 20;
 
-  font-size: 0px;
+  font-size: 0;
 }
 
 .slider-controls label {
@@ -359,7 +359,7 @@ input[type="radio"].visually-hidden {
 .sub-menu li:first-child::after {
   position: absolute;
   content: "";
-  bottom: 0px;
+  bottom: 0;
   left: 6px;
 
   width: 128px;
@@ -576,7 +576,7 @@ input[type="radio"].visually-hidden {
   width: 560px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0px 20px;
+  padding: 0 20px;
   padding-top: 14px;
   padding-bottom: 22px;
 
@@ -918,7 +918,7 @@ input[type="radio"].visually-hidden {
 
 .content-wrapper p {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 
   font-size: 16px;
   font-weight: 400;
@@ -1001,6 +1001,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 20;
 
+  width: 100%;
+  height: 430px;
+
   border: none;
 }
 
@@ -1016,14 +1019,14 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 302px;
-  padding: 30px 25px;
+  padding: 27px 25px;
 
   background-color: #fffefe;
   border-radius: 12px;
 }
 
 .map-contacts p {
-  margin: 0px;
+  margin: 0;
 }
 
 .map-contacts .address-title {
@@ -1060,7 +1063,7 @@ input[type="radio"].visually-hidden {
 }
 
 .telephone-link {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   line-height: 22px;
   color: #323232;
@@ -1477,7 +1480,7 @@ input[type="radio"].visually-hidden {
 
 .modal-search {
   top: 36px;
-  right: 0px;
+  right: 0;
 
   width: 340px;
   padding: 20px 15px;
@@ -2103,7 +2106,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 700px;
-  padding: 0px 15px;
+  padding: 0 15px;
   padding-top: 7px;
   padding-bottom: 11px;
 }
@@ -2259,7 +2262,7 @@ input[type="radio"].visually-hidden {
   content: "\BB";
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
 
   color: #ffffff;
 }
